@@ -76,7 +76,7 @@ function getEmailAttachment($token){
             
             #check if File exist
             $existiert = Test-Path -Path $OutputPath\$Name
-            if ($existiert -eq $false)
+            if ($exist -eq $false)
                 {
                 $null = Set-Content -Path "$OutputPath\$Name" -Value $attachmentData -Encoding Byte
                     Write-Host "File '$Name' wurde angelegt" -Fore Green
