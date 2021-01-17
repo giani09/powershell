@@ -75,7 +75,7 @@ function getEmailAttachment($token){
             $attachmentData = [System.Convert]::FromBase64String($attachment.ContentBytes)
             
             #check if File exist
-            $existiert = Test-Path -Path $OutputPath\$Name
+            $exist = Test-Path -Path $OutputPath\$Name
             if ($exist -eq $false)
                 {
                 $null = Set-Content -Path "$OutputPath\$Name" -Value $attachmentData -Encoding Byte
