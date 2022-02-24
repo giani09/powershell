@@ -106,7 +106,7 @@ function getEmailAttachment($token){
 # Open Log
 $prefix = $MyInvocation.MyCommand.Name
 $stamp = (Get-Date).ToString().Replace("/", "-").replace(":", "-")
-Start-Transcript -Path "C:\Users\gianl\Desktop\OneDrive_1_20.12.2020\log\log_final.txt" -Append
+Start-Transcript -Path "xxx\log_.txt" -Append
 $start = Get-Date
 
 
